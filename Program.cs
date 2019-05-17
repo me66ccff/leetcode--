@@ -10,7 +10,7 @@ namespace 算法
     {
         static void Main(string[] args)
         {
-            数组.从排序数组中删除重复项.Run();
+            数组.加一.Run();
             Console.ReadLine();
         }
     }

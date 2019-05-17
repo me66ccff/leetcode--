@@ -10,7 +10,7 @@ namespace 算法.数组
     {
         public static void Run()
         {
-            int[] nums = { 1,2,3 };
+            int[] nums = { 6,1,4,5,3,9,0,1,9,5,1,8,6,7,0,5,5,4,3 };
             var tmp = PlusOne(nums);
             foreach (var item in tmp)
             {
@@ -19,22 +19,29 @@ namespace 算法.数组
         }
         public static int[] PlusOne(int[] digits)
         {
-            int all = 0;
-            for (int i = 0; i < digits.Length; i++)
+            for (int i = digits.Length - 1; i >= 0; i--)
             {
-                all += digits[i] * int.Parse(Math.Pow(10,digits.Length-i-1).ToString());
+                if (++digits[i] != 10)
+                {
+                    return digits;
+                }
+                else
+                {
+                    digits[i] = 0;
+                    if (i == 0)
+                    {
+                        //增加数组长度，扩容
+                        int[] newDigits = new int[digits.Length + 1];
+                        for (int j = 0; j < digits.Length; j++)
+                        {
+                            newDigits[j + 1] = digits[j];
+                        }
+                        newDigits[0] = 1;
+                        return newDigits;
+                    }
+                }
             }
-            all += 1;
-            //可以用linq
-            //return all.ToString().Select(s => int.Parse(s.ToString())).ToArray();
-            //也可以使用for循环分割
-            int[] tmp = new int[(int)Math.Log10(all) + 1];
-            for (int i = (int)Math.Log10(all); i >= 0 ; i--)
-            {
-                tmp[i] = (int)(all / Math.Pow(10,i));
-                all -= tmp[i] * (int)Math.Pow(10, i);
-            }
-            return tmp.Reverse<int>().ToArray<int>();
+            return null;
         }
     }
 }

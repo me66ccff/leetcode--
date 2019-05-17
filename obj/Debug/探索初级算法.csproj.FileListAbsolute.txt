@@ -1,0 +1,6 @@
+D:\Project\C#\算法\算法\bin\Debug\算法.exe.config
+D:\Project\C#\算法\算法\bin\Debug\算法.exe
+D:\Project\C#\算法\算法\bin\Debug\算法.pdb
+D:\Project\C#\算法\算法\obj\Debug\探索初级算法.csproj.CoreCompileInputs.cache
+D:\Project\C#\算法\算法\obj\Debug\算法.exe
+D:\Project\C#\算法\算法\obj\Debug\算法.pdb

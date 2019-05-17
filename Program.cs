@@ -10,7 +10,7 @@ namespace 算法
     {
         static void Main(string[] args)
         {
-            数组.加一.Run();
+            数组.两数之和.Run();
             Console.ReadLine();
         }
     }

@@ -46,12 +46,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="数组\两个数组的交集 II.cs" />
+    <Compile Include="数组\两数之和.cs" />
     <Compile Include="数组\买卖股票的最佳时机 II.cs" />
     <Compile Include="数组\从排序数组中删除重复项.cs" />
     <Compile Include="数组\加一.cs" />
     <Compile Include="数组\只出现一次的数字.cs" />
     <Compile Include="数组\存在重复.cs" />
     <Compile Include="数组\旋转数组.cs" />
+    <Compile Include="数组\移动零.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
